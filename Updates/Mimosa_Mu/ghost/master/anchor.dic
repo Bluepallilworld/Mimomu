@@ -103,7 +103,7 @@ OnAnchorSelect
 		{
 			when "lint" //if the link is this value
 			{
-				"\0\s[0]Update worked! Lint is my half cousin from another multiverse!\w8\n\ She's chaotic.\w8\n\n[half]More on my half cousin?\e"
+				"\0\s[0] UPDATE! Lint is my half cousin from another multiverse!\w8\n\ She's chaotic.\w8\n\n[half]More on my half cousin?\e"
 			}
 			when "shine" //if the link is this value
 			{
