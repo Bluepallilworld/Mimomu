@@ -466,16 +466,16 @@ else
 	//This if checks for the time of day as defined in bootend.dic. Do you remember the words used for each chunk of time in GetTimeSlot? These are the same words! You can check for all those times, or none of them and delete this if you want.
 	if timeslot == "earlymorning"
 	{
-		"\0\s[0]It is very early!\w8\n\0\s[0]Did you sleep enough...\e"
+		"\1\s[178]\0\s[0]It is very early!\w8\n\0\s[0]Did you sleep enough...\1\s[179]\e"
 		
-		"\0\s[0]>yawns<.\w8\n\0\s[0]Why are you up so early?\e"
+		"\0\s[181]>yawns<.\w8\n\0\s[0]Why are you up so early?\e"
 	}
 	
 	if timeslot == "morning"
 	{
 		"\0\s[0]What are you planning to do today?\e"
 		
-		"\0\s[0]>yawns<.\w8\0\s[0]I'm still a little bit tired.\e"
+		"\0\s[181]>yawns<.\w8\0\s[0]I'm still a little bit tired.\e"
 	}
 	
 	if timeslot == "lunch"
@@ -495,26 +495,26 @@ else
 	
 	if timeslot == "evening"
 	{
-		"\0\s[0]It is very early!\w8\n\0\s[0]Did you sleep enough...\e"
+		"\0\s[0]Ooooh it's going to be dinner time!\w8\n\0\s[0]Or maybe you already ate?\e"
 		
-		"\0\s[0]>yawns<.\w8\n\0\s[0]Why are you up so early?\e"
+		"\0\s[5]Did you have a nice day?\e"
+		
 	}
 	
 	if timeslot == "latenight"
 	{
-		"\0\s[0]Ooooh it's going to be dinner time!\w8\n\0\s[0]Or maybe you already ate?\e"
-		
-		"\0\s[5]Did you have a nice day?\e"
+		"\0\s[181]\1\s[178]"
+	
 	}
 	
 	if timeslot == "midnight"
 	{
-		"\0\s[0]Have you considered sleeping?\w8\n\0\s[0]It's a nice activity,\w5 especially this late?\e"
+		"\1\s[179]\0\s[0]Have you considered sleeping?\w8\n\0\s[0]It's a nice activity,\w5 especially this late?\1\s[178]\e"
 		
-		"\0\s[0]>yawns<\e"
+		"\1\s[179]\0\s[181]>yawns<\w5\0\s[183]\e"
 		
-		"\0\s[0]I don't mind keeping you company if you can't sleep but,\w5 try not to call us too early tomorrow?\w8\nI think we might sleep in after that.\w8\w8\n>yawns<"
-		// a yawning pose would make this neater, maybe a dozing off pose too, sleeping too
+		"\1\s[179]\0\s[0]I don't mind keeping you company if you can't sleep but,\w5 try not to call us too early tomorrow?\w8\nI think we might sleep in after that.\w5\0\s[181]\w8\w8\n>yawns<\w8\0\s[183]"
+		//true sleeping pose Animation? someday?
 		
 	}
 	
