@@ -1,9 +1,5 @@
 ﻿//---------------------------AI Talk--------------------------
-// TEST UPDATE IS THUS THINGUE WORKUNG
-
-
-
-// Alright, this is it! The bread and butter of your ghost. This is where all their random conversations are stored. Of all the .dic files, this is the one you will probably be adding stuff to and updating the most as new dialogue comes to your mind. It is relatively simple in that there aren't many functions or real coding involved with this file, but there are a few cool tricks you can do within randomtalk that can make dialogue with interesting effects, so I'll point them out as we go along.
+//Alright, this is it! The bread and butter of your ghost. This is where all their random conversations are stored. Of all the .dic files, this is the one you will probably be adding stuff to and updating the most as new dialogue comes to your mind. It is relatively simple in that there aren't many functions or real coding involved with this file, but there are a few cool tricks you can do within randomtalk that can make dialogue with interesting effects, so I'll point them out as we go along.
 
 //I'm going to leave a lot of examples of different types of dialogue in here that you can study if the possibilities they present intrigue you. Study them carefully!
 
@@ -155,7 +151,7 @@ else
 	">humming softly<\n\n[half] \0\s[0]Scooby-dooby-doo...\nWhere are you...\nHmmm hmm hm hmm hm hmmm hm.\w8\1\s[152]"
 	"\0\s[0]Do you like reading too?\w8\0\s[5]\nMaybe we can talk about our favorite stories together one day!"
 	"\0\s[0]Maybe we could play?\w8\0\s[5]\nDo you want to play?\1\s[56]"
-	"\0\s[5]Mu, do you think I could reach the top of the screen if I jump?\w8\1\s[18]\w8\w8\1\s[58]\w8\0\s[0]\n\n[half]Yeah, \1\s[10]\0\s[98]maybe you're right...\w8\nIt is very high..."
+	"\0\s[180]\w8\w8\w8\w8\w8\0\s[5]Mu, do you think I could reach the top of the screen if I jump?\w8\1\s[18]\w8\w8\1\s[58]\w8\0\s[98]\n\n[half]Yeah,\w5 maybe you're right...\w8\n\0\s[0]It is very high..."
 	"\0\s[0]Do you want to hear one of my stories, I think I still have some you didn't hear yet?"
 	"\0\s[0]You're very nice, %(username),\w5\1\s[25]\0\s[5] thanks for that!"
 	"\0\s[0]Is your day good?\w8\n\0\s[5]Mine is great because I'm hanging out with a friend~\1\s[19]"
@@ -166,7 +162,6 @@ else
 	"\0\s[9]...I'm getting hungry...\w5\1\s[152]"
 	"\0\s[0] >yawns<\w8\nYou should invest in a bean bag.\w5\1\s[152]"
 	// bean bag mode maybe one day
-	// what about half-lidded sleepy?
 	
 	"\0\s[0]Do you have animals?\w8\n\0\s[9]Can I pet them one day?\1\s[19]\w8\w8\w8\w8%(drawingforyou)"
 	"\0\s[0]What are your favorite colors?\w8\nI like dark blue and golden the most!"
@@ -189,8 +184,7 @@ else
 	"\0\s[0]I wonder if Oriana will visit us soon..."
 	"\0\s[8]If a plant needs rain and sun to grow, it seems only logical that someone may need tears and joy to thrive?"
 	"\0\s[0]Hey...\w5\Hey, %(username).\w5\.\w5\.%(username)...\w8\nHey!\w8\n\0\s[0]What are you doing?"
-	"\0\s[5]I think you're doing great!\w8\nI heard it was important to encourage friends."
-	// Add a star drawing for Mu
+	"\0\s[5]I think you're doing great!\w8\nI heard it was important to encourage friends...\1\s[174]"
 	
 	"\0\s[8]I think I saw a tiny white dog earlier in %(usersfolder)...\w8\nI wonder if it's still there?"
 	"\0\s[0]Have you ever played OneShot?\w8\nI wish I could meet Nico,\w5 I'm sure we could be friends!"
@@ -238,6 +232,18 @@ else
 	"\0\s[0]Do you have vacations soon?\w8\nI heard people who work and study also have vacations once in a while!\w8\1\s[152]"
 	"\0\s[0]Do you go to school?\w8\nOr perhaps you went in the past and don't go anymore...\w8\nI'm sort of homeschooled?\w8\nFancy loves playing classroom however.\1\s[27]"	
 	
+	"\0\s[180]"
+	"\0\s[181]"
+	"\0\s[181]\w8\w8\w8\0\s[182]"
+	"\0\s[182]"
+	"\0\s[183]"
+
+	"1\s[176]\w8\1\s[177]"
+	"1\s[176]"
+	"1\s[177]"
+	"1\s[179]"
+	"1\s[178]\w8\w8\w8\w8\w8\w8\w8\1\s[179]"
+	"1\s[179]"
 	
 	achain
 {{CHAIN
