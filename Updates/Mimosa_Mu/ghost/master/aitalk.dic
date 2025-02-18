@@ -195,7 +195,7 @@ else
 	"\0\s[0]%(username), you are very cool!\w8\nUnless you're not and you're very good at pretending?\w8\nSo cool...\w5\1\s[152]"
 	// this sentence needs work
 	
-	"\0\s[5]You're my first human friend, %(username)!\w8\0\s[9]\nYou...\w5\ are?\w5\ A human, aren't you?\w8\nI mean,\w5\0\s[8] you look like one at least...\w8\n\0\s[0]What do you think Mu, is %(heshe) a humain?\w8\n\1\s[18]\w8\1\s[19]\w8\1\s[15]\w8\w8\n\n[half]\0\s[5]You're right, %(heshe) is a friend and that's what matter!"
+	"\0\s[5]You're my first human friend, %(username)!\w8\0\s[9]\nYou...\w5\ are?\w5\ A human, aren't you?\w8\nI mean,\w5\0\s[8] you look like one at least...\w8\n\0\s[0]What do you think Mu, %(hesshes) a humain?\w8\n\1\s[18]\w8\1\s[19]\w8\1\s[15]\w8\w8\n\n[half]\0\s[5]You're right, %(hesshes) a friend and that's what matter!"
 	"\0\s[5]I hope you're having a good day!"
 	"\1\s[92]\0\s[91]"
 	
@@ -245,17 +245,6 @@ else
 	"\1\s[178]\w8\w8\w8\w8\w8\w8\w8\1\s[179]"
 	"\1\s[179]"
 	
-	achain
-{{CHAIN
-	//this will happen the first time the chain is called
-"\0\s[0]Do you have a favorite pokemon?\e"
-	
-	//they will then go to this dialogue next
-	"\0\s[5]Mine is...!\w8 Mine is...\w8\n\0\s[8]What's its name again...\w8\1\s[152]\e"
-	
-	//this will be the last piece of dialogue in the chain, then they will go back to their normal dialogue
-	"\0\s[0]OH I REMEMBERED!\w8\n\0\s[5]It's keldeo!\w8\1\s[15]\e:chain=end"
-}}CHAIN
 	
 	
 	
@@ -614,17 +603,17 @@ else
 //Each chain function will go through each part of the chain in order even if it's in one function, until it goes to \e:chain=end which will end the chain, as you could probably guess. So you can put the entire chain dialogue into one place.
 //You don't have to make chains if you don't want to! This is just for reference if you ever have a conversation come up where it could be handy.
 
-// achain
-// {{CHAIN
-	// //this will happen the first time the chain is called
-// "\0\s[0]Do you have a favorite pokemon?\e"
+	achain
+{{CHAIN
+	//this will happen the first time the chain is called
+"\0\s[0]Do you have a favorite pokemon?\e"
 	
-	// //they will then go to this dialogue next
-	// "\0\s[5]Mine is...!Mine is... What's its name again...\w8\1\s[10]\e"
+	//they will then go to this dialogue next
+	"\0\s[5]Mine is...!\w8 Mine is...\w8\n\0\s[8]What's its name again...\w8\1\s[152]\e"
 	
-	// //this will be the last piece of dialogue in the chain, then they will go back to their normal dialogue
-	// "\0\s[0]OH I REMEMBERED!\w8\n\It's keldeo!\w8\1\s[15]\e:chain=end"
-// }}CHAIN
+	//this will be the last piece of dialogue in the chain, then they will go back to their normal dialogue
+	"\0\s[0]OH I REMEMBERED!\w8\n\0\s[5]It's keldeo!\w8\1\s[15]\e:chain=end"
+}}CHAIN
 
 //Pay careful attention to the CHAIN text and double brackets for these. Double brackets, CHAIN, dialogue, double brackets, CHAIN. If you are planning on making chains, I'd recommend just copying and pasting the chain example here and changing the dialogue and name of the function as you need. Less likely for mistakes to happen, you know?
 //Note also it ends with \e:chain=end, basically ending the chain.

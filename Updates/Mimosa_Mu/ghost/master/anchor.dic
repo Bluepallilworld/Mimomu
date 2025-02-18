@@ -107,7 +107,7 @@ OnAnchorSelect
 			}
 			when "shine" //if the link is this value
 			{
-				"\0\s[0]Shine is my adopted sister!\w8\n\Malignance and her gave me a new home when I needed one!\w8\n\n[half]More on my adopted sister?\e"
+				"\0\s[0]Shine is my adopted sister!\w8\nMalignance and her gave me a new home when I needed one!\w8\n\n[half]More on my adopted sister?\e"
 			}
 			when "malignance" //if the link is this value
 			{
@@ -151,7 +151,7 @@ OnAnchorSelect
 			}
 			when "milkyway" //if the link is this value
 			{
-				"\0\s[0]Milkyway works in a coffee shop!\w8\n\Slumber Cat Coffee belongs to her parents.\w8\n\She's funny and always has candy for me!\w8\n\n[half]More on my tired friend? \e"
+				"\0\s[0]Milkyway works in a coffee shop!\w8\nSlumber Cat Coffee belongs to her parents.\w8\n\She's funny and always has candy for me!\w8\n\n[half]More on my tired friend? \e"
 			}
 			when "dasha" //if the link is this value
 			{
